@@ -51,33 +51,38 @@ class ConnectionExample:
         # Process non-sequenced responses
         # ...
 
-    def run(self):
+    def invoke_sync(self, sequence):
         result = None
 
-        def build_result(responses):
+        def collect_responses(responses):
             nonlocal result
-            result = {
-                'manufacturer': responses[0]['message'],
-                'fw_version': responses[1]['message'],
-                'hw_version': responses[2]['message'],
-                'serial_number': responses[3]['message'],
-                'product_name': responses[4]['message'],
-            }
+            result = responses
 
-        sequence = self.controller.submit(
-            sequence=[
-                lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.MANUFACTURER),
-                lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.FW_VERSION),
-                lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.HW_VERSION),
-                lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.SERIAL_NUMBER),
-                lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.PRODUCT_NAME)
-            ],
-            on_ready=build_result
+        sequence_id = self.controller.submit(
+            sequence=sequence,
+            on_ready=collect_responses
         )
 
-        self.controller.wait_for(sequence)
+        self.controller.wait_for(sequence_id)
 
         return result
+
+    def run(self):
+        responses = self.invoke_sync([
+            lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.MANUFACTURER),
+            lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.FW_VERSION),
+            lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.HW_VERSION),
+            lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.SERIAL_NUMBER),
+            lambda transfer_id: self.supernova.getUsbString(id=transfer_id, subCommand=GetUsbStringSubCommand.PRODUCT_NAME),
+        ])
+
+        return {
+            'manufacturer': responses[0]['message'],
+            'fw_version': responses[1]['message'],
+            'hw_version': responses[2]['message'],
+            'serial_number': responses[3]['message'],
+            'product_name': responses[4]['message'],
+        }
 
     def done(self):
         self.supernova.close()
