@@ -1,6 +1,6 @@
 # Demo Supernova with PIC18F16Q20 board
 
-This folder contains a demonstration project for interfacing with the PIC18F16Q20 board using the Supernova host adapter connected to the I3C High Voltage bus. The objective of this project is to utilize the PIC18QF16Q20 as a protocol translator, issuing custom I3C commands to execute the following transactions:
+This folder contains a demonstration project for interfacing with the PIC18F16Q20 board using the Supernova host adapter connected to the I3C High Voltage bus. The objective of this project is to utilize the [PIC18QF16Q20 as a protocol translator](https://mplab-discover.microchip.com/com.microchip.mcu8.mplabx.project.pic18f16q20-i3c-multi-protocol-translator-mplab-mcc), issuing custom I3C commands to execute the following transactions:
 
 - I2C write
 
@@ -28,9 +28,9 @@ This folder contains a demonstration project for interfacing with the PIC18F16Q2
 
 - Python 3.10
 - Supernova host adapter
-- PIC18QF16Q20 connected to the PIC18QF16Q20 board.
-- PIC18QF16Q20 board connected to the high voltage I3C bus.
-- External I2C F-RAM connected to the I2C bus from the PIC18QF16Q20 board.
+- Microchip PIC18F16Q20 Curisosity Nano board plugged on the Binho PIC18F16Q20 Curisosity Nano baseboard.
+- Binho PIC18F16Q20 Curisosity Nano baseboard connected to the Supernova I3C HV Port through the I3C2-1.2V connector.
+- External I2C F-RAM connected to the I2C bus from the Binho PIC18QF16Q20 Curisoity Nano baseboard throught the I2C-I3C1 connector.
 
 ## Installation
 
