@@ -9,3 +9,7 @@ The [notebooks](./notebooks/) folder hosts different Jupyter notebooks sorted in
 ### Python scripts
 
 The [scripts](./scripts/) folder is intended to host examples using simple python scripts and modules. However, this folder has not received maintenance in the last few months and the contents might be outdated. You will find and examples of how to sequence operations with the Supernova SDK and the [TransferController](https://pypi.org/project/transfer-controller/).
+
+## Customer support
+
+For any questions or doubts you can visit our [Customer Support Portal](https://support.binho.io/) or just reach out at **support@binho.io**.
