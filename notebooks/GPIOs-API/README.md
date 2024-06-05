@@ -20,4 +20,4 @@ This folder contains a demonstration project to demo the Supernova SDK GPIO API 
 
 ## Usage
 
-Follow the instructions on the GPIO-API notebook.
+Follow the instructions on the [GPIO-API](GPIOs-API.ipynb) notebook.

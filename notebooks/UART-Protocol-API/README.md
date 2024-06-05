@@ -19,4 +19,4 @@ This folder contains a demonstration project aimed at testing the UART Protocol 
 
 ## Usage
 
-Follow the instructions on the UART-Protocol-Supernova-API notebook.
+Follow the instructions on the [UART-Protocol-Supernova-API](UART-Protocol-Supernova-API.ipynb) notebook.

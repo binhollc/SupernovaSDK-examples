@@ -20,4 +20,4 @@ This folder contains a demonstration project to test the Supernova host adapter 
 
 ## Usage
 
-Follow the instructions on the SPI-Protocol-Supernova-API notebook.
+Follow the instructions on the [SPI-Protocol-Supernova-API](SPI-Protocol-Supernova-API.ipynb) notebook.
