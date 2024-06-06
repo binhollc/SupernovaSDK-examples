@@ -1,6 +1,6 @@
 # SupernovaSDK-examples
 
-Welcome to the SupernovaSDK examples repository! This public repository provides a collection of examples intended to show the users how the API of the [Supernova SDK](https://pypi.org/project/BinhoSupernova/) works.  
+Welcome to the SupernovaSDK examples repository! This public repository provides a collection of examples intended to show the users how the API of the [Supernova SDK](https://pypi.org/project/BinhoSupernova/) works.
 
 ### Jupyter Notebooks
 
@@ -8,7 +8,7 @@ The [notebooks](./notebooks/) folder hosts different Jupyter notebooks sorted in
 
 ### Python scripts
 
-The [scripts](./scripts/) folder is intended to host examples using simple python scripts and modules. However, this folder has not received maintenance in the last few months and the contents might be outdated. You will find and examples of how to sequence operations with the Supernova SDK and the [TransferController](https://pypi.org/project/transfer-controller/).
+The [scripts](./scripts/) folder is intended to host examples using simple python scripts and modules. However, this folder has not received maintenance in the last few months and the contents might be outdated. You will find examples of how to sequence operations with the Supernova SDK and the [TransferController](https://pypi.org/project/transfer-controller/).
 
 ## Customer support
 
