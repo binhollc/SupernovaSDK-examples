@@ -4,7 +4,7 @@ Welcome to the SupernovaSDK examples repository! This public repository provides
 
 ### Jupyter Notebooks
 
-The [notebooks](./notebooks/) folder hosts different Jupyter notebooks sorted in sub folders by protocol or interface. [Jupyter Notebooks](https://jupyter.org/) are an interactive user interface that allows user to run code in cells. Maybe you do not know the name Jupyter Notebooks but you may have used [Google Colab](https://colab.google/) instead, which is based on Jupyter Notebooks. Finally, there is also a [Visual Studio Code extension for Jupyter Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
+The [notebooks](./notebooks/) folder hosts different Jupyter notebooks sorted in sub folders by protocol or interface. [Jupyter Notebooks](https://jupyter.org/) are an interactive user interface that allows user to run code in cells. Maybe you do not know the name Jupyter Notebooks but you may have used [Google Colab](https://colab.google/) which is based on Jupyter Notebooks, or used [Visual Studio Code extension for Jupyter Notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks).
 
 ### Python scripts
 
