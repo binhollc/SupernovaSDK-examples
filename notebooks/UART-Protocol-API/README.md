@@ -5,7 +5,7 @@ This folder contains a demonstration project aimed at testing the UART Protocol 
 ## Prerequisites
 
 - Python 3.10
-- Supernova host adapter with breakout board connected
+- Supernova host adapter with breakout board connected and running `firmware version >= 2.0.0`
 
 ## Installation
 
@@ -19,4 +19,4 @@ This folder contains a demonstration project aimed at testing the UART Protocol 
 
 ## Usage
 
-Follow the instructions on the UART-Protocol-Supernova-API notebook.
+Follow the instructions on the [UART-Protocol-Supernova-API](UART-Protocol-Supernova-API.ipynb) notebook.

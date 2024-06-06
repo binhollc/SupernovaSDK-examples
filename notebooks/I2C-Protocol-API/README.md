@@ -5,7 +5,7 @@ This folder contains a demonstration project to test the Supernova host adapter 
 ## Prerequisites
 
 - Python 3.10
-- Supernova host adapter with Qwiic connector
+- Supernova host adapter with Qwiic connector and running `firmware version >= 2.4.0`
 - Adafruit I2C Non-Volatile FRAM Breakout - 256Kbit / 32KByte
 
 ## Installation
@@ -20,4 +20,4 @@ This folder contains a demonstration project to test the Supernova host adapter 
 
 ## Usage
 
-Follow the instructions on the I2C-Protocol-Supernova-API notebook.
+Follow the instructions on the [I2C-Protocol-Supernova-API.ipynb](I2C-Protocol-Supernova-API.ipynb) notebook.

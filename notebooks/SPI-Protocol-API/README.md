@@ -5,7 +5,7 @@ This folder contains a demonstration project to test the Supernova host adapter 
 ## Prerequisites
 
 - Python 3.10
-- Supernova host adapter with breakout board connected
+- Supernova host adapter with breakout board connected and running `firmware version >= 2.0.0`
 - Adafruit SPI Non-Volatile FRAM Breakout - 64Kbit / 8KByte 
 
 ## Installation
@@ -20,4 +20,4 @@ This folder contains a demonstration project to test the Supernova host adapter 
 
 ## Usage
 
-Follow the instructions on the SPI-Protocol-Supernova-API notebook.
+Follow the instructions on the [SPI-Protocol-Supernova-API](SPI-Protocol-Supernova-API.ipynb) notebook.
