@@ -1,6 +1,6 @@
 # Demo of Supernova I3C Target API
 
-This demo shows how to use the I3C Target API to configure and control a Supernova devices as an I3C Target.
+This demo shows how to use the I3C Target API to configure and control a Supernova device as an I3C Target.
 
 ## Prerequisites
 
