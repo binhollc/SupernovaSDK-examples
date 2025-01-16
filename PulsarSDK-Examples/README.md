@@ -12,4 +12,4 @@ The [notebooks](./notebooks/) folder hosts different Jupyter notebooks sorted in
 
 ## Customer support
 
-For any questions or doubts you can visit our [Customer Support Portal](https://support.binho.io/) or just reach out at **support@binho.io**.
+For any questions or doubts you can visit our [Customer Support Portal](https://support.binho.io/) or just reach out at **techsupport@binho.io**.
