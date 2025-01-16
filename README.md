@@ -1,7 +1,7 @@
-# BinhoCosmic-examples
+# Binho SDKs-examples
 
-Welcome to the BinhoCosmic examples repository! This public repository holds examples of all the different packages across the Binho Cosmic ecosystem. It is intended to show the users how to interact with each of these packages.
+Welcome to the Binho SDKs examples repository! This public repository holds examples for all the Supernova SDK and Pulsar SDK packages, and it is intended to show the users how to interact with Binho devices through their corresponding packages and APIs.
 
 ## Customer support
 
-For any questions or doubts you can visit our [Customer Support Portal](https://support.binho.io/) or just reach out at **techsupport@binho.io**.
+For any questions or doubts, visit our [Customer Support Portal](https://support.binho.io/) or reach out at **techsupport@binho.io**.
