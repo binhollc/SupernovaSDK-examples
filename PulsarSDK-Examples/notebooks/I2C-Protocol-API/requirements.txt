@@ -1,1 +1,1 @@
-BinhoPulsar == 0.2.0
+BinhoPulsar == 1.0.0

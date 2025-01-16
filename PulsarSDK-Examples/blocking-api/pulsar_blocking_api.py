@@ -1,7 +1,7 @@
 import threading
 import re
-from BinhoSupernova.Supernova import Supernova
-from BinhoSupernova.commands.system.definitions import *
+from BinhoPulsar.Pulsar import Pulsar
+from BinhoPulsar.commands.system.definitions import *
 
 # ==================================================================================
 # region Blocking API
@@ -10,13 +10,13 @@ from BinhoSupernova.commands.system.definitions import *
 MIN_TRANSFER_ID = 1
 MAX_TRANSFER_ID = 65535
 
-class SupernovaBlockingApi:
+class PulsarBlockingApi:
 
     def __init__(self):
         self.transfer_id = 0
 
-        self.supernova = Supernova()
-        self.supernova.onEvent(self.__on_receive_callback)
+        self.pulsar = Pulsar()
+        self.pulsar.onEvent(self.__on_receive_callback)
 
         self.response_event = threading.Event()
         self.notification_event = threading.Event()
@@ -31,18 +31,18 @@ class SupernovaBlockingApi:
         This private methods set the methods that do not return a response from the host adapter.
         For this reason, they are not decorated with the sequential decorator.
         """
-        self.open = self.supernova.open
-        self.close = self.supernova.close
-        self.reset_device = self.supernova.resetDevice
-        self.enter_boot_mode = self.supernova.enterBootMode
+        self.open = self.pulsar.open
+        self.close = self.pulsar.close
+        self.reset_device = self.pulsar.resetDevice
+        self.enter_boot_mode = self.pulsar.enterBootMode
 
     def __decorate_methods(self):
         # Apply sequential decorator dynamically for all methods of the SDK instance except the one listed below.
-        exclude_methods = ["open", "close", "resetDevice", "enterBootMode", "onEvent", "i3cControllerCccTransfer"]
+        exclude_methods = ["open", "close", "resetDevice", "enterBootMode", "onEvent"]
 
-        for method_name in dir(self.supernova):
-            if not method_name.startswith("_") and not method_name in exclude_methods and callable(getattr(self.supernova, method_name)):
-                method = getattr(self.supernova, method_name)
+        for method_name in dir(self.pulsar):
+            if not method_name.startswith("_") and not method_name in exclude_methods and callable(getattr(self.pulsar, method_name)):
+                method = getattr(self.pulsar, method_name)
                 setattr(self, self.__camel_to_snake(method_name), self.__sequential_call(method))
 
     def __on_receive_callback(self, dut_message = None, system_message = None):
@@ -99,13 +99,13 @@ class SupernovaBlockingApi:
 # region Main code
 # ==================================================================================
 
-supernova_device = SupernovaBlockingApi()
+pulsar_device = PulsarBlockingApi()
 
 # Open the device.
-supernova_device.open()
+pulsar_device.open()
 
 # Get device manufacturer.
-response = supernova_device.get_usb_string(subCommand=GetUsbStringSubCommand.MANUFACTURER)
+response = pulsar_device.get_usb_string(subCommand=GetUsbStringSubCommand.MANUFACTURER)
 
 if response["result"] == CommonResultCodes.SUCCESS.name:
     print(f"Manufacturer: {response['payload']}")
@@ -113,7 +113,7 @@ else:
     print(f"Error {response['result']}")
 
 # Get product name.
-response = supernova_device.get_usb_string(subCommand=GetUsbStringSubCommand.PRODUCT_NAME)
+response = pulsar_device.get_usb_string(subCommand=GetUsbStringSubCommand.PRODUCT_NAME)
 
 if response["result"] == CommonResultCodes.SUCCESS.name:
     print(f"Product name: {response['payload']}")
@@ -121,7 +121,7 @@ else:
     print(f"Error {response['result']}")
 
 # Get firmware version
-response = supernova_device.get_usb_string(subCommand=GetUsbStringSubCommand.FW_VERSION)
+response = pulsar_device.get_usb_string(subCommand=GetUsbStringSubCommand.FW_VERSION)
 
 if response["result"] == CommonResultCodes.SUCCESS.name:
     print(f"Firmware version: {response['payload']}")
@@ -129,7 +129,7 @@ else:
     print(f"Error {response['result']}")
 
 # Get hardware version
-response = supernova_device.get_usb_string(subCommand=GetUsbStringSubCommand.HW_VERSION)
+response = pulsar_device.get_usb_string(subCommand=GetUsbStringSubCommand.HW_VERSION)
 
 if response["result"] == CommonResultCodes.SUCCESS.name:
     print(f"Hardware version: {response['payload']}")
@@ -137,7 +137,7 @@ else:
     print(f"Error {response['result']}")
 
 # Get Serial Number
-response = supernova_device.get_usb_string(subCommand=GetUsbStringSubCommand.SERIAL_NUMBER)
+response = pulsar_device.get_usb_string(subCommand=GetUsbStringSubCommand.SERIAL_NUMBER)
 
 if response["result"] == CommonResultCodes.SUCCESS.name:
     print(f"Serial number: {response['payload']}")
@@ -145,6 +145,6 @@ else:
     print(f"Error {response['result']}")
 
 # Close the device.
-supernova_device.close()
+pulsar_device.close()
 
 # endregion
