@@ -4,8 +4,9 @@ This folder contains a demonstration project aimed at testing the UART Protocol 
 
 ## Prerequisites
 
-- Python 3.10
-- Supernova host adapter with breakout board connected and running `firmware version >= 2.0.0`
+- Python >= 3.8
+- BinhoSupernova SDK >= v4.0.0
+- Supernova host adapter with breakout board connected and running `firmware version >= 4.0.0`
 
 ## Installation
 
