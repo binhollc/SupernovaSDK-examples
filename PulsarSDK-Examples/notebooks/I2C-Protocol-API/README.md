@@ -1,6 +1,6 @@
 # Demo of Pulsar I2C API
 
-This folder contains a demonstration project to test the Pulsar host adapter I2C Protocol API. The different commands are tested showing the capabilities of the feature. For a more illustrative experience, the commands are tested using a FRAM memory [MB85RC56V](https://cdn-learn.adafruit.com/assets/assets/000/043/904/original/MB85RC256V-DS501-00017-3v0-E.pdf?1500009796). As the Pulsar host adapter supports two I2C buses, this Jupyter Notebook demonstrates their usage by connecting the memory module to the I2C Qwiic connector to interact with I2C Bus A and then to the Breakout Board I2C pins to interact with I2C Bus B.
+This folder contains a demonstration project to test the Pulsar host adapter I2C Protocol API. The different commands are tested showing the capabilities of the feature. For a more illustrative experience, the commands are tested using a FRAM memory [MB85RC56V](https://cdn-learn.adafruit.com/assets/assets/000/043/904/original/MB85RC256V-DS501-00017-3v0-E.pdf?1500009796). Although the Pulsar host adapter supports two I2C buses, this Jupyter Notebook demonstrates only the usage I2C Bus A by connecting the memory module to the I2C Qwiic connector. However, the user must use the same API method and replace the value `I2cBus.I2C_BUS_A` with the value `I2cBus.I2C_BUS_B` in the parameter `busId` to interact with the I2C Bus B. The I2C Bus B is accessible from the Breakout Board I2C SDA and SCL pins.
 
 ## Prerequisites
 
