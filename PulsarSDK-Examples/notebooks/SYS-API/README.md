@@ -5,7 +5,7 @@ This folder contains a single notebook called [SYS-API](SYS-API.ipynb) which is 
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoPulsar SDK >= v1.0.0
+- BinhoPulsar SDK == v1.0.0
 - Pulsar host adapter with breakout board connected and running `firmware version >= 4.0.0`
 
 ## Installation

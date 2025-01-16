@@ -5,7 +5,7 @@ This folder contains a demonstration project to test the Pulsar host adapter I2C
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoPulsar SDK >= v1.0.0
+- BinhoPulsar SDK == v1.0.0
 - Pulsar host adapter with Qwiic connector and running `firmware version >= 4.0.0`
 - Adafruit I2C Non-Volatile FRAM Breakout - 256Kbit / 32KByte
 

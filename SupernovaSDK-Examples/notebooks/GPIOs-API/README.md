@@ -5,7 +5,7 @@ This folder contains a demonstration project to demo the Supernova SDK GPIO API 
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoSupernova SDK >= v4.0.0
+- BinhoSupernova SDK == v4.0.0
 - Supernova host adapter with breakout board connected and running `firmware version >= 4.0.0`
 - 1x female to female jumper wire
 
