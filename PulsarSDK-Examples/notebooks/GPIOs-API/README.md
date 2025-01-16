@@ -1,12 +1,12 @@
-# Demo of Supernova GPIO API
+# Demo of Pulsar GPIO API
 
-This folder contains a demonstration project to demo the Supernova SDK GPIO API to control the GPIOs of the Supernova host adapter.
+This folder contains a demonstration project to demo the Pulsar SDK GPIO API to control the GPIOs of the Pulsar host adapter.
 
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoSupernova SDK == v4.0.0
-- Supernova host adapter with breakout board connected and running `firmware version >= 4.0.0`
+- BinhoPulsar SDK == v1.0.0
+- Pulsar host adapter with breakout board connected and running `firmware version >= 4.0.0`
 - 1x female to female jumper wire
 
 ## Installation

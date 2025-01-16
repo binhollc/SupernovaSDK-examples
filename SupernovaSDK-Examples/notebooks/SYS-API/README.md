@@ -1,13 +1,12 @@
-# Demo of Supernova GPIO API
+# Supernova SYS API documentation
 
-This folder contains a demonstration project to demo the Supernova SDK GPIO API to control the GPIOs of the Supernova host adapter.
+This folder contains a single notebook called [SYS-API](SYS-API.ipynb) which is aimed at describing the methods that are part of the whole system management, such as, setting different voltages or resetting the device.
 
 ## Prerequisites
 
 - Python >= 3.8
 - BinhoSupernova SDK == v4.0.0
 - Supernova host adapter with breakout board connected and running `firmware version >= 4.0.0`
-- 1x female to female jumper wire
 
 ## Installation
 
@@ -21,4 +20,4 @@ This folder contains a demonstration project to demo the Supernova SDK GPIO API 
 
 ## Usage
 
-Follow the instructions on the [GPIO-API](GPIOs-API.ipynb) notebook.
+Follow the instructions on the [SYS-API](SYS-API.ipynb) notebook.
