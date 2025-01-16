@@ -1,1 +1,1 @@
-BinhoSupernova>=4.0.0
+BinhoSupernova==4.0.0
