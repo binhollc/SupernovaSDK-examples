@@ -19,7 +19,8 @@ class IMU14CLICK:
     def __init__(self, pulsar_blocking_api, i2c_bus):
         self.pulsar = pulsar_blocking_api
         self.i2c_bus = i2c_bus
-        
+        self.imu_data = [0,0,0,0,0,0,0]
+
         self.__check_device_connection()
         print("Device found")
 
@@ -98,20 +99,19 @@ class IMU14CLICK:
                                                    targetAddress=self.address,
                                                    requestDataLength=READ_LENGTH,
                                                    registerAddress=[TEMP_DATA1_register])
-        
-        if response['result'] != self.pulsar.i2c_definitions.CommonResultCodes.SUCCESS.name:
-            print("Error: Could not read data: ", response['result'])
-            exit(1)
-        
-        raw_data = response['payload']
 
-        # Convert data to signed 16-bit integers
-        imu_data = [0,0,0,0,0,0,0]
-        for i in range(len(imu_data)):
-            imu_data[i] = ctypes.c_int16((raw_data[2*i] << 8) | raw_data[2*i + 1]).value
-        
-        return imu_data
-    
+        if response == None or response['result'] != self.pulsar.i2c_definitions.CommonResultCodes.SUCCESS.name:
+            print("Error: Could not read data: ", response)
+
+        else:
+            raw_data = response['payload']
+
+            # Convert data to signed 16-bit integers
+            for i in range(len(self.imu_data)):
+                self.imu_data[i] = ctypes.c_int16((raw_data[2*i] << 8) | raw_data[2*i + 1]).value
+
+        return self.imu_data
+
     def calibrate(self):
         print("Calibrating...")
         sum_values = [0, 0, 0, 0, 0, 0, 0]
