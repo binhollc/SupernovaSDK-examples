@@ -7,7 +7,7 @@ This folder contains a Python script to change the devices mode into boot. This 
 - Python >= 3.8
 - binhosupernova SDK == v4.1.0
 - binhopulsar SDK == v1.1.0
-- Supernova/Pulsar host adapter running `firmware version >= 4.0.0`
+- Supernova/Pulsar host adapter running `firmware version >= 4.1.0`
 
 ## Installation
 
