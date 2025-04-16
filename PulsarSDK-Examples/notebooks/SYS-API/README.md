@@ -6,7 +6,7 @@ This folder contains a single notebook called [SYS-API](SYS-API.ipynb) which is 
 
 - Python >= 3.8
 - binhopulsar SDK == v1.1.0
-- Pulsar host adapter with breakout board connected and running `firmware version >= 4.1.0`
+- Pulsar host adapter with breakout board connected and running `firmware version >= 4.1.2`
 
 ## Installation
 
