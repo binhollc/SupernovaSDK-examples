@@ -25,8 +25,8 @@ This folder contains a demonstration project for interfacing with the PIC18F16Q2
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoSupernova SDK == v4.0.0
-- Supernova host adapter running `firmware version >= 4.0.0`
+- binhosupernova SDK == v4.1.1
+- Supernova host adapter running `firmware version >= 4.1.2`
 - Microchip PIC18F16Q20 Curiosity Nano board loaded with the custom image found in the _"PIC18F16Q20 firmware image"_ folder.
 - Microchip PIC18F16Q20 Curiosity Nano board plugged on the Binho PIC18F16Q20 Curiosity Nano baseboard.
 - Binho PIC18F16Q20 Curiosity Nano baseboard connected to the Supernova I3C HV Port through the I3C2-1.2V connector.

@@ -1,10 +1,10 @@
 # SupernovaSDK-examples
 
-This folder provides a collection of examples intended to show the users how the API of the [Supernova SDK](https://pypi.org/project/BinhoSupernova/) works.
+This folder provides a collection of examples intended to show the users how the API of the [Supernova SDK](https://pypi.org/project/binhosupernova/) works.
 
 ### Blocking API
 
-Since the [Supernova SDK](https://pypi.org/project/BinhoSupernova/) API is non-blocking and the responses and notification sent by the host adapter device are handled by a callback function, the API might not be suitable for applications where a blocking API is required. The example inside the folder [blocking-api](./blocking-api/) shows how user can generate a new wrapper class and dynamically decorates the Supernova class methods to generate a blocking API.
+Since the [Supernova SDK](https://pypi.org/project/binhosupernova/) API is non-blocking and the responses and notification sent by the host adapter device are handled by a callback function, the API might not be suitable for applications where a blocking API is required. The example inside the folder [blocking-api](./blocking-api/) shows how user can generate a new wrapper class and dynamically decorates the Supernova class methods to generate a blocking API.
 
 ### Jupyter Notebooks
 

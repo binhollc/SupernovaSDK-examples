@@ -5,8 +5,8 @@ This folder contains a demonstration project to test the Pulsar host adapter SPI
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoPulsar SDK == v1.0.0
-- Pulsar host adapter with breakout board connected and running `firmware version >= 4.0.0`
+- binhopulsar SDK == v1.1.0
+- Pulsar host adapter with breakout board connected and running `firmware version >= 4.1.2`
 - Adafruit SPI Non-Volatile FRAM Breakout - 64Kbit / 8KByte
 
 ## Installation
