@@ -1,7 +1,7 @@
 import threading
 import re
-from BinhoPulsar.Pulsar import Pulsar
-from BinhoPulsar.commands.system.definitions import *
+from binhopulsar.pulsar import Pulsar
+from binhopulsar.commands.system.definitions import *
 
 # ==================================================================================
 # region Blocking API

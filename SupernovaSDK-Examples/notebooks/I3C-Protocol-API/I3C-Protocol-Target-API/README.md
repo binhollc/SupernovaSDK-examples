@@ -5,8 +5,8 @@ This demo shows how to use the I3C Target API to configure and control a Superno
 ## Prerequisites
 
 - Python >= 3.8
-- BinhoSupernova SDK == v4.0.0
-- 2x Supernovas host adapter running `firmware version >= 4.0.0`
+- binhosupernova SDK == v4.1.1
+- 2x Supernovas host adapter running `firmware version >= 4.1.2`
 
 ## Installation
 

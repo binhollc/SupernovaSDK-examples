@@ -1,2 +1,2 @@
-BinhoSupernova == 4.0.0
-BinhoPulsar == 1.0.0
+binhosupernova == 4.1.1
+binhopulsar == 1.1.0

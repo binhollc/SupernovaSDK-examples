@@ -1,7 +1,7 @@
 import threading
 import re
-from BinhoSupernova.Supernova import Supernova
-from BinhoSupernova.commands.system.definitions import *
+from binhosupernova.supernova import Supernova
+from binhosupernova.commands.system.definitions import *
 
 # ==================================================================================
 # region Blocking API

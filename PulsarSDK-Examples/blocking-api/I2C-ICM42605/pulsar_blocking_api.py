@@ -1,6 +1,6 @@
 import threading
 import re
-from BinhoPulsar.Pulsar import Pulsar
+from binhopulsar.pulsar import Pulsar
 
 # ==================================================================================
 # Blocking API
