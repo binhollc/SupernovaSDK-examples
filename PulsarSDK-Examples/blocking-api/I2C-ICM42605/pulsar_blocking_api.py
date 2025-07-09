@@ -16,7 +16,7 @@ class PulsarBlockingApi:
 
         self.pulsar = Pulsar()
         self.pulsar.onEvent(self.__on_receive_callback)
-        self.i2c_definitions = __import__("BinhoPulsar.commands.i2c.definitions", fromlist=[""])
+        self.i2c_definitions = __import__("binhopulsar.commands.i2c.definitions", fromlist=[""])
 
         self.response_event = threading.Event()
         self.response = dict()
