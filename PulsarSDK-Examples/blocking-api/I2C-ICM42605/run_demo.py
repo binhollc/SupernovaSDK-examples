@@ -26,7 +26,7 @@ def main():
                                           frequency=frequency,
                                           pullUpResistorsValue=pullUpResistorsValue)
 
-    if not response['result'] in [pulsar.i2c_definitions.CommonResultCodes.SUCCESS.name, pulsar.i2c_definitions.CommonResultCodes.BUS_ALREADY_INITIALIZED.name]:
+    if not response['result'] in [pulsar.i2c_definitions.CommonResultCodes.SUCCESS.name, pulsar.i2c_definitions.CommonResultCodes.INTERFACE_ALREADY_INITIALIZED.name]:
         print("Error initializing the I2C bus")
         exit(1)
 
